@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="height:500px"></div>
+<div id="cloud1" style="height:400px;width:300px"></div>
+<div id = "cloud2" style ="height:400px;width:400px;top:0px;left:400px;position:absolute"></div>
+<!-- ECharts单文件引入 -->
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script src="json/data.json"></script>
+<script type="text/javascript">
+    function getSeries(d) {
+        var ret = []
+		console.log(d);
+        for (var key in d) {
+            ret.push({
+                name: key,
+                type: 'scatter',
+                symbol: 'circle',
+                symbolSize: function (value) {
+                    var temp = (value[2] / 0.010439848852928599) * 60;
+                    if (temp < 5 && temp > 0) {
+                        return temp * 2;
+                    }
+                    else {
+                        return temp;
+                    }
+                },
+                data: d[key].slice(9)
+            })
+        }
+        return ret;
+    }
+</script>
+<script src="json/cloud.json"></script>
+<script type="text/javascript">
+	function createRandomItemStyle() {
+		return {
+			normal: {
+				color: 'rgb(' + [
+					Math.round(Math.random() * 160),
+					Math.round(Math.random() * 160),
+					Math.round(Math.random() * 160)
+				].join(',') + ')'
+			}
+		};
+	}
+	
+		
+	function getSeries(d) {
+		var ret = []
+		console.log(d);
+		ret.push({
+			type: 'wordCloud',
+			size: ['80%', '80%'],
+			textRotation : [0, 45, 90, -45],
+			textPadding: 0,
+			autoSize: {
+				enable: true,
+				minSize: 14
+			},
+			data: getdata(d)
+		})
+		
+		return ret;
+	}
+	function getdata(d) {
+		var ret = [];
+		for(var i = 0;i < d.length; i++) {
+			ret.push({
+				name: d[i].name,
+				value: d[i].value,
+				itemStyle: createRandomItemStyle()
+			})
+		}
+		return ret;
+	}
+</script>
+
+<script type="text/javascript">
+	// 路径配置
+	require.config({
+		paths: {
+			echarts: 'http://echarts.baidu.com/build/dist'
+		}
+	});
+	
+	function drawCloud(i,idCloud) {
+	// 使用
+	require(
+		[
+			'echarts',
+			'echarts/chart/wordCloud'
+		],
+		function (ec) {
+			// 基于准备好的dom，初始化echarts图表
+			var myChart = ec.init(document.getElementById(idCloud)); 
+			
+			
+
+		option = {
+			title: {
+				text: 'Google Trends',
+				link: 'http://www.google.com/trends/hottrends'
+			},
+			tooltip: {
+				show: true
+			},
+			series: getSeries(clouds[i]) 
+			
+		};
+	
+			// 为echarts对象加载数据 
+			myChart.setOption(option); 
+		}
+	);
+	}
+	drawCloud(0,"cloud1");
+	drawCloud(1,"cloud2");
+</script>
+<script type="text/javascript">
+    // 路径配置
+    require.config({
+        paths: {
+            echarts: 'http://echarts.baidu.com/build/dist'
+        }
+    });
+
+    // 使用
+    require(
+            [
+                'echarts',
+                'echarts/chart/bar',// 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/line',
+                'echarts/chart/scatter'
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('main'));
+
+                var option = {
+                    tooltip: {
+                        trigger: 'item',
+                        showDelay: 0,
+                        formatter: ' {a}:{c0}'
+                    },
+                    legend: {
+                        data: Object.keys(datas)
+                    },
+                    toolbox: {
+                        show: true,
+                        feature: {
+                            mark: {show: true},
+                            dataZoom: {show: true},
+                            dataView: {show: true, readOnly: false},
+                            restore: {show: true},
+                            saveAsImage: {show: true}
+                        }
+                    },
+                    xAxis: [
+                        {
+                            type: 'category',
+                            boundaryGap: false,
+                            data: function () {
+                                var list = [];
+                                for (var i = 2003; i <= 2011; i++) {
+                                    list.push(i);
+                                }
+                                return list;
+                            }()
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'value',
+                            splitNumber: 1,
+                            scale: true
+                        }
+                    ],
+                    grid: {
+                        x2: 40
+                    },
+
+                    series: getSeries(datas)
+                };
+
+                // 为echarts对象加载数据 
+                myChart.setOption(option);
+            }
+    );
+</script>
+</body>

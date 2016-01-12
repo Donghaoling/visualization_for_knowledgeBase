@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+</head>
+<style>
+#cloud2 {
+
+	left: 500px;
+}
+</style>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="cloud1" style="height:400px;width:300px"></div>
+	<div id = "cloud2" style = "height:400px;width:400px;top:0px;left:400px;position:absolute"></div>
+	<div id = "cloud3" style = "height:400px;width:400px;top:0px;left:800px;position:absolute"></div>
+	<div id = "cloud4" style = "height:400px;width:400px;top:0px;left:1200px;position:absolute"></div>
+	<div id = "cloud5" style = "height:400px;width:400px;top:300px;left:0px;position:absolute"></div>
+	<div id = "cloud6" style = "height:400px;width:400px;top:300px;left:400px;position:absolute"></div>
+	<div id = "cloud7" style = "height:400px;width:400px;top:300px;left:800px;position:absolute"></div>
+	<div id = "cloud8" style = "height:400px;width:400px;top:300px;left:1200px;position:absolute"></div>
+	<div id = "cloud9" style = "height:400px;width:400px;top:600px;left:0px;position:absolute"></div>
+	<div id = "cloud10" style = "height:400px;width:400px;top:600px;left:400px;position:absolute"></div>
+	<div id = "cloud11" style = "height:400px;width:400px;top:600px;left:800px;position:absolute"></div>
+	<div id = "cloud12" style = "height:400px;width:400px;top:600px;left:1200px;position:absolute"></div>
+    <!-- ECharts单文件引入 -->
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+	<script src="json/cloud.json"></script>
+	<script type="text/javascript">
+		function getSeries(d) {
+			var ret = []
+			console.log(d);
+			for (var key in d) {
+				ret.push({
+					name: key,
+					type: 'scatter',
+					symbol: 'circle',
+					symbolSize: function (value) {
+						var temp = (value[2] / 0.010439848852928599) * 60;
+						if (temp < 5 && temp > 0) {
+							return temp * 2;
+						}
+						else {
+							return temp;
+						}
+					},
+					data: d[key].slice(9)
+				})
+			}
+			return ret;
+		}
+	</script>
+	<script type="text/javascript">
+    <script type="text/javascript">
+        // 路径配置
+        require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        });
+		
+        function drawCloud1(idCloud) {
+        // 使用
+		function createRandomItemStyle() {
+			return {
+				normal: {
+					color: 'rgb(' + [
+						Math.round((Math.random()+1) * 120),
+						Math.round(Math.random() * 100),		
+						Math.round(Math.random() * 100)
+					].join(',') + ')'
+				}
+			};
+		}
+		/*function createRandomItemStyle() {
+			return {
+				normal: {
+					color: 'rgb(' + [
+						Math.round((Math.random()+1) * 120),
+						Math.round(Math.random() * 10),
+						Math.round(Math.random() * 10)
+					].join(',') + ')'
+				}
+			};
+		}*/
+        require(
+            [
+                'echarts',
+				'echarts/chart/wordCloud'			
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById(idCloud)); 
+				
+				
+
+				var option = {
+					/*title: {
+						text: 'Google Trends',
+						link: 'http://www.google.com/trends/hottrends'
+					},*/
+					tooltip: {
+						show: true
+					},
+					series: [{
+						name: '胰腺癌',
+						type: 'wordCloud',
+						center: ['50%','50%'], //词云的中心
+						size: ['100%', '100%'],//词云的大小
+						textRotation : [0, 30,  -30],
+						textPadding: 0,
+						autoSize: {
+							enable: true,
+							minSize: 10
+						},
+						data: [
+							{name:"IGF",value:40,itemStyle:createRandomItemStyle()},{name:"细胞培养",value:20,itemStyle:createRandomItemStyle()},{name:"胰腺癌",value:20,itemStyle:createRandomItemStyle()},{name:"分子克隆",value:20,itemStyle:createRandomItemStyle()},{name:"呼吸道",value:10,itemStyle:createRandomItemStyle()},{name:"进一步",value:10,itemStyle:createRandomItemStyle()},{name:"切实可行",value:10,itemStyle:createRandomItemStyle()},{name:"神经肽",value:10,itemStyle:createRandomItemStyle()},{name:"糖皮质激素受体",value:10,itemStyle:createRandomItemStyle()},{name:"调控机制",value:10,itemStyle:createRandomItemStyle()}
+							
+							
+						]
+					}]
+				};
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+		};
+		function drawCloud2(idCloud) {
+		function createRandomItemStyle() {
+			return {
+				normal: {
+					color: 'rgb(' + [
+						Math.round((Math.random()+1) * 120),
+						Math.round(Math.random() * 100),		
+						Math.round(Math.random() * 100)
+					].join(',') + ')'
+				}
+			};
+		}
+        // 使用
+        require(
+            [
+                'echarts',
+				'echarts/chart/wordCloud'			
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById(idCloud)); 
+				
+				
+
+				var option = {
+					/*title: {
+						text: 'Google Trends',
+						link: 'http://www.google.com/trends/hottrends'
+					},*/
+					tooltip: {
+						show: true
+					},
+					series: [{
+						name: '胰腺癌',
+						type: 'wordCloud',
+						center: ['50%','50%'], //词云的中心
+						size: ['100%', '100%'],//词云的大小
+						textRotation : [0,20,-20,10,-10],
+						textPadding: 0,
+						autoSize: {
+							enable: true,
+							minSize: 20
+						},
+						data: [
+							{name:"胰腺癌",value:30,itemStyle:createRandomItemStyle()},{name:"IGF",value:25,itemStyle:createRandomItemStyle()},{name:"进一步",value:14,itemStyle:createRandomItemStyle()},{name:"变应性鼻炎",value:12,itemStyle:createRandomItemStyle()},{name:"发病机制",value:12,itemStyle:createRandomItemStyle()},{name:"IGE",value:11,itemStyle:createRandomItemStyle()},{name:"肥大细胞",value:11,itemStyle:createRandomItemStyle()},{name:"COPD",value:10,itemStyle:createRandomItemStyle()},{name:"发病机理",value:10,itemStyle:createRandomItemStyle()},{name:"反应性",value:9,itemStyle:createRandomItemStyle()}
+							
+							
+						]
+					}]
+				};
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+		};
+		function drawCloud3(idCloud) {
+		function createRandomItemStyle() {
+			return {
+				normal: {
+					color: 'rgb(' + [
+						Math.round((Math.random()+1) * 120),
+						Math.round(Math.random() * 100),		
+						Math.round(Math.random() * 100)
+					].join(',') + ')'
+				}
+			};
+		}
+        // 使用
+        require(
+            [
+                'echarts',
+				'echarts/chart/wordCloud'			
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById(idCloud)); 
+				
+				
+
+				var option = {
+					/*title: {
+						text: 'Google Trends',
+						link: 'http://www.google.com/trends/hottrends'
+					},*/
+					tooltip: {
+						show: true
+					},
+					series: [{
+						name: '胰腺癌',
+						type: 'wordCloud',
+						center: ['50%','50%'], //词云的中心
+						size: ['80%', '80%'],//词云的大小
+						textRotation : [0,20,-20,10,-10],
+						textPadding: 0,
+						autoSize: {
+							enable: true,
+							minSize: 10
+						},
+						data: [
+							{name:"胰腺癌",value:79,itemStyle:createRandomItemStyle()},{name:"COPD",value:49,itemStyle:createRandomItemStyle()},{name:"IGF",value:39,itemStyle:createRandomItemStyle()},{name:"发病机制",value:30,itemStyle:createRandomItemStyle()},{name:"MUC",value:29,itemStyle:createRandomItemStyle()},{name:"进一步",value:29,itemStyle:createRandomItemStyle()},{name:"变应性鼻炎",value:26,itemStyle:createRandomItemStyle()},{name:"胰腺癌细胞",value:24,itemStyle:createRandomItemStyle()},{name:"反应性",value:22,itemStyle:createRandomItemStyle()},{name:"动物模型",value:21,itemStyle:createRandomItemStyle()}
+							
+							
+						]
+					}]
+				};
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+		};
+		function drawCloud4(idCloud) {
+		function createRandomItemStyle() {
+			return {
+				normal: {
+					color: 'rgb(' + [
+						Math.round((Math.random()+1) * 120),
+						Math.round(Math.random() * 100),		
+						Math.round(Math.random() * 100)
+					].join(',') + ')'
+				}
+			};
+		}
+        // 使用
+        require(
+            [
+                'echarts',
+				'echarts/chart/wordCloud'			
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById(idCloud)); 
+				
+				
+
+				var option = {
+					/*title: {
+						text: 'Google Trends',
+						link: 'http://www.google.com/trends/hottrends'
+					},*/
+					tooltip: {
+						show: true
+					},
+					series: [{
+						name: '胰腺癌',
+						type: 'wordCloud',
+						center: ['50%','50%'], //词云的中心
+						size: ['80%', '80%'],//词云的大小
+						textRotation : [0,20,-20,10,-10],
+						textPadding: 0,
+						autoSize: {
+							enable: true,
+							minSize: 10
+						},
+						data: [
+							{name:"弓形虫",value:40,itemStyle:createRandomItemStyle()},{name:"过敏原",value:30,itemStyle:createRandomItemStyle()},{name:"IGE",value:20,itemStyle:createRandomItemStyle()},{name:"发病机制",value:20,itemStyle:createRandomItemStyle()},{name:"变应性鼻炎",value:20,itemStyle:createRandomItemStyle()},{name:"上皮细胞",value:20,itemStyle:createRandomItemStyle()},{name:"胰腺癌",value:20,itemStyle:createRandomItemStyle()},{name:"SHH",value:10,itemStyle:createRandomItemStyle()},{name:"动物模型",value:10,itemStyle:createRandomItemStyle()},{name:"脱颗粒",value:10,itemStyle:createRandomItemStyle()}
+							
+							
+						]
+					}]
+				};
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+		};
+		function drawCloud5(idCloud) {
+		function createRandomItemStyle() {
+			return {
+				normal: {
+					color: 'rgb(' + [
+						Math.round(Math.random() * 10),
+						Math.round(Math.random() * 120),
+						Math.round((Math.random()+1) * 120)
+					].join(',') + ')'
+				}
+			};
+		}
+        // 使用
+        require(
+            [
+                'echarts',
+				'echarts/chart/wordCloud'			
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById(idCloud)); 
+				
+				
+
+				var option = {
+					/*title: {
+						text: 'Google Trends',
+						link: 'http://www.google.com/trends/hottrends'
+					},*/
+					tooltip: {
+						show: true
+					},
+					series: [{
+						name: '心血管疾病',
+						type: 'wordCloud',
+						center: ['50%','50%'], //词云的中心
+						size: ['80%', '80%'],//词云的大小
+						textRotation : [0,20,-20,10,-10],
+						textPadding: 0,
+						autoSize: {
+							enable: true,
+							minSize: 10
+						},
+						data: [
+							{name:"hpv",value:20,itemStyle:createRandomItemStyle()},{name:"晶状体",value:20,itemStyle:createRandomItemStyle()},{name:"ldl",value:20,itemStyle:createRandomItemStyle()},{name:"vsmc",value:20,itemStyle:createRandomItemStyle()},{name:"血管平滑肌细胞",value:20,itemStyle:createRandomItemStyle()},{name:"hdl",value:10,itemStyle:createRandomItemStyle()},{name:"mcp",value:10,itemStyle:createRandomItemStyle()},{name:"胆固醇",value:10,itemStyle:createRandomItemStyle()},{name:"动脉硬化",value:10,itemStyle:createRandomItemStyle()},{name:"分子机制",value:10,itemStyle:createRandomItemStyle()}
+							
+							
+						]
+					}]
+				};
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+		};
+		function drawCloud6(idCloud) {
+		function createRandomItemStyle() {
+			return {
+				normal: {
+					color: 'rgb(' + [
+						Math.round(Math.random() * 10),
+						Math.round(Math.random() * 120),
+						Math.round((Math.random()+1) * 120)
+					].join(',') + ')'
+				}
+			};
+		}
+        // 使用
+        require(
+            [
+                'echarts',
+				'echarts/chart/wordCloud'			
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById(idCloud)); 
+				
+				
+
+				var option = {
+					/*title: {
+						text: 'Google Trends',
+						link: 'http://www.google.com/trends/hottrends'
+					},*/
+					tooltip: {
+						show: true
+					},
+					series: [{
+						name: '心血管疾病',
+						type: 'wordCloud',
+						center: ['50%','50%'], //词云的中心
+						size: ['80%', '80%'],//词云的大小
+						textRotation : [0,20,-20,10,-10],
+						textPadding: 0,
+						autoSize: {
+							enable: true,
+							minSize: 10
+						},
+						data: [
+							{name:"动脉粥样硬化",value:56,itemStyle:createRandomItemStyle()},{name:"高血压",value:27,itemStyle:createRandomItemStyle()},{name:"vsmc",value:25,itemStyle:createRandomItemStyle()},{name:"冠心病",value:17,itemStyle:createRandomItemStyle()},{name:"hpv",value:16,itemStyle:createRandomItemStyle()},{name:"胆固醇",value:16,itemStyle:createRandomItemStyle()},{name:"血管平滑肌细胞",value:16,itemStyle:createRandomItemStyle()},{name:"abca",value:13,itemStyle:createRandomItemStyle()},{name:"ldl",value:13,itemStyle:createRandomItemStyle()},{name:"enos",value:12,itemStyle:createRandomItemStyle()},{name:"巨噬细胞",value:12,itemStyle:createRandomItemStyle()}
+							
+							
+						]
+					}]
+				};
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+		};
+		function drawCloud7(idCloud) {
+		function createRandomItemStyle() {
+			return {
+				normal: {
+					color: 'rgb(' + [
+						Math.round(Math.random() * 10),
+						Math.round(Math.random() * 120),
+						Math.round((Math.random()+1) * 120)
+					].join(',') + ')'
+				}
+			};
+		}
+        // 使用
+        require(
+            [
+                'echarts',
+				'echarts/chart/wordCloud'			
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById(idCloud)); 
+				
+				
+
+				var option = {
+					/*title: {
+						text: 'Google Trends',
+						link: 'http://www.google.com/trends/hottrends'
+					},*/
+					tooltip: {
+						show: true
+					},
+					series: [{
+						name: '心血管疾病',
+						type: 'wordCloud',
+						center: ['50%','50%'], //词云的中心
+						size: ['80%', '80%'],//词云的大小
+						textRotation : [0,20,-20,10,-10],
+						textPadding: 0,
+						autoSize: {
+							enable: true,
+							minSize: 10
+						},
+						data: [
+							{name:"高血压",value:99,itemStyle:createRandomItemStyle()},{name:"宫颈癌",value:87,itemStyle:createRandomItemStyle()},{name:"动脉粥样硬化",value:80,itemStyle:createRandomItemStyle()},{name:"ENOS",value:56,itemStyle:createRandomItemStyle()},{name:"内皮细胞",value:41,itemStyle:createRandomItemStyle()},{name:"HPV",value:39,itemStyle:createRandomItemStyle()},{name:"SHR",value:39,itemStyle:createRandomItemStyle()},{name:"VSMC",value:39,itemStyle:createRandomItemStyle()},{name:"主动脉",value:38,itemStyle:createRandomItemStyle()},{name:"平滑肌细胞",value:37,itemStyle:createRandomItemStyle()}
+							
+							
+						]
+					}]
+				};
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+		};
+		
+		function drawCloud8(idCloud) {
+		function createRandomItemStyle() {
+			return {
+				normal: {
+					color: 'rgb(' + [
+						Math.round(Math.random() * 10),
+						Math.round(Math.random() * 120),
+						Math.round((Math.random()+1) * 120)
+					].join(',') + ')'
+				}
+			};
+		}
+        // 使用
+        require(
+            [
+                'echarts',
+				'echarts/chart/wordCloud'			
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById(idCloud)); 
+				
+				
+
+				var option = {
+					/*title: {
+						text: 'Google Trends',
+						link: 'http://www.google.com/trends/hottrends'
+					},*/
+					tooltip: {
+						show: true
+					},
+					series: [{
+						name: '心血管疾病',
+						type: 'wordCloud',
+						center: ['50%','50%'], //词云的中心
+						size: ['80%', '80%'],//词云的大小
+						textRotation : [0,20,-20,10,-10],
+						textPadding:0,
+						autoSize: {
+							enable: true,
+							minSize: 10
+						},
+						data: [
+							{name:"动脉粥样硬化",value:30,itemStyle:createRandomItemStyle()},{name:"宫颈癌",value:30,itemStyle:createRandomItemStyle()},{name:"再狭窄",value:30,itemStyle:createRandomItemStyle()},{name:"冠心病",value:20,itemStyle:createRandomItemStyle()},{name:"血栓形成",value:20,itemStyle:createRandomItemStyle()},{name:"hpv",value:20,itemStyle:createRandomItemStyle()},{name:"vsmc",value:20,itemStyle:createRandomItemStyle()},{name:"高血压",value:20,itemStyle:createRandomItemStyle()},{name:"心血管",value:10,itemStyle:createRandomItemStyle()},{name:"白内障",value:10,itemStyle:createRandomItemStyle()},{name:"sirt",value:10,itemStyle:createRandomItemStyle()}
+							
+							
+						]
+					}]
+				};
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+		};
+		function drawCloud9(idCloud) {
+		function createRandomItemStyle() {
+			return {
+				normal: {
+					color: 'rgb(' + [
+						Math.round(Math.random() * 150),
+						Math.round((Math.random()+1) * 120),
+						Math.round(Math.random() * 100)
+					].join(',') + ')'
+				}
+			};
+		}
+        // 使用
+        require(
+            [
+                'echarts',
+				'echarts/chart/wordCloud'			
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById(idCloud)); 
+				
+				
+
+				var option = {
+					/*title: {
+						text: 'Google Trends',
+						link: 'http://www.google.com/trends/hottrends'
+					},*/
+					tooltip: {
+						show: true
+					},
+					series: [{
+						name: '白血病',
+						type: 'wordCloud',
+						center: ['50%','50%'], //词云的中心
+						size: ['80%', '80%'],//词云的大小
+						textRotation : [0,20,-20,10,-10],
+						textPadding:0,
+						autoSize: {
+							enable: true,
+							minSize: 10
+						},
+						data: [
+							{name:"白血病",value:30,itemStyle:createRandomItemStyle()},{name:"HIFU",value:20,itemStyle:createRandomItemStyle()},{name:"CSF",value:20,itemStyle:createRandomItemStyle()},{name:"临床治疗",value:20,itemStyle:createRandomItemStyle()},{name:"AML",value:10,itemStyle:createRandomItemStyle()},{name:"CML",value:10,itemStyle:createRandomItemStyle()},{name:"恶性肿瘤",value:10,itemStyle:createRandomItemStyle()},{name:"进一步",value:10,itemStyle:createRandomItemStyle()},{name:"克隆性",value:10,itemStyle:createRandomItemStyle()},{name:"流式细胞术",value:10,itemStyle:createRandomItemStyle()}
+							
+							
+						]
+					}]
+				};
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+		};
+		function drawCloud10(idCloud) {
+		function createRandomItemStyle() {
+			return {
+				normal: {
+					color: 'rgb(' + [
+						Math.round(Math.random() * 150),
+						Math.round((Math.random()+1) * 120),
+						Math.round(Math.random() * 100)
+					].join(',') + ')'
+				}
+			};
+		}
+        // 使用
+        require(
+            [
+                'echarts',
+				'echarts/chart/wordCloud'			
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById(idCloud)); 
+				
+				
+
+				var option = {
+					/*title: {
+						text: 'Google Trends',
+						link: 'http://www.google.com/trends/hottrends'
+					},*/
+					tooltip: {
+						show: true
+					},
+					series: [{
+						name: '白血病',
+						type: 'wordCloud',
+						center: ['50%','50%'], //词云的中心
+						size: ['80%', '80%'],//词云的大小
+						textRotation : [0,20,-20,10,-10],
+						textPadding:0,
+						autoSize: {
+							enable: true,
+							minSize: 10
+						},
+						data: [
+							{name:"白血病",value:56,itemStyle:createRandomItemStyle()},{name:"mdr",value:24,itemStyle:createRandomItemStyle()},{name:"细胞株",value:21,itemStyle:createRandomItemStyle()},{name:"多药耐药",value:20,itemStyle:createRandomItemStyle()},{name:"细胞的",value:18,itemStyle:createRandomItemStyle()},{name:"细胞分化",value:16,itemStyle:createRandomItemStyle()},{name:"hifu",value:14,itemStyle:createRandomItemStyle()},{name:"银屑病",value:14,itemStyle:createRandomItemStyle()},{name:"aml",value:13,itemStyle:createRandomItemStyle()},{name:"mds",value:12,itemStyle:createRandomItemStyle()}
+							
+							
+						]
+					}]
+				};
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+		};
+		function drawCloud11(idCloud) {
+		function createRandomItemStyle() {
+			return {
+				normal: {
+					color: 'rgb(' + [
+						Math.round(Math.random() * 150),
+						Math.round((Math.random()+1) * 120),
+						Math.round(Math.random() * 100)
+					].join(',') + ')'
+				}
+			};
+		}
+        // 使用
+        require(
+            [
+                'echarts',
+				'echarts/chart/wordCloud'			
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById(idCloud)); 
+				
+				
+
+				var option = {
+					/*title: {
+						text: 'Google Trends',
+						link: 'http://www.google.com/trends/hottrends'
+					},*/
+					tooltip: {
+						show: true
+					},
+					series: [{
+						name: '白血病',
+						type: 'wordCloud',
+						center: ['50%','50%'], //词云的中心
+						size: ['80%', '80%'],//词云的大小
+						textRotation : [0,20,-20,10,-10],
+						textPadding:0,
+						autoSize: {
+							enable: true,
+							minSize: 10
+						},
+						data: [
+							{name:"白血病",value:107,itemStyle:createRandomItemStyle()},{name:"银屑病",value:73,itemStyle:createRandomItemStyle()},{name:"细胞的",value:52,itemStyle:createRandomItemStyle()},{name:"多药耐药",value:44,itemStyle:createRandomItemStyle()},{name:"aml",value:36,itemStyle:createRandomItemStyle()},{name:"白血病细胞",value:36,itemStyle:createRandomItemStyle()},{name:"apl",value:32,itemStyle:createRandomItemStyle()},{name:"cml",value:32,itemStyle:createRandomItemStyle()},{name:"all",value:31,itemStyle:createRandomItemStyle()},{name:"pml",value:31,itemStyle:createRandomItemStyle()}
+							
+							
+						]
+					}]
+				};
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+		};
+		function drawCloud12(idCloud) {
+		function createRandomItemStyle() {
+			return {
+				normal: {
+					color: 'rgb(' + [
+						Math.round(Math.random() * 150),
+						Math.round((Math.random()+1) * 120),
+						Math.round(Math.random() * 100)
+					].join(',') + ')'
+				}
+			};
+		}
+        // 使用
+        require(
+            [
+                'echarts',
+				'echarts/chart/wordCloud'			
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById(idCloud)); 
+				
+				
+
+				var option = {
+					/*title: {
+						text: 'Google Trends',
+						link: 'http://www.google.com/trends/hottrends'
+					},*/
+					tooltip: {
+						show: true
+					},
+					series: [{
+						name: '白血病',
+						type: 'wordCloud',
+						center: ['50%','50%'], //词云的中心
+						size: ['80%', '80%'],//词云的大小
+						textRotation : [0,20,-20,10,-10],
+						textPadding:0,
+						autoSize: {
+							enable: true,
+							minSize: 10
+						},
+						data: [
+							{name:"白血病",value:40,itemStyle:createRandomItemStyle()},{name:"mds",value:30,itemStyle:createRandomItemStyle()},{name:"csf",value:30,itemStyle:createRandomItemStyle()},{name:"细胞的",value:30,itemStyle:createRandomItemStyle()},{name:"aml",value:20,itemStyle:createRandomItemStyle()},{name:"apl",value:20,itemStyle:createRandomItemStyle()},{name:"kit",value:20,itemStyle:createRandomItemStyle()},{name:"进一步",value:20,itemStyle:createRandomItemStyle()},{name:"白血病细胞",value:20,itemStyle:createRandomItemStyle()},{name:"细胞增殖",value:20,itemStyle:createRandomItemStyle()}
+							
+							
+						]
+					}]
+				};
+        
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+		};
+		drawCloud1("cloud1");
+		drawCloud2("cloud2");
+		drawCloud3("cloud3");
+		drawCloud4("cloud4");
+		drawCloud5("cloud5");
+		drawCloud6("cloud6");
+		drawCloud7("cloud7");
+		drawCloud8("cloud8");
+		drawCloud9("cloud9");
+		drawCloud10("cloud10");
+		drawCloud11("cloud11");
+		drawCloud12("cloud12");
+    </script>
+</body>

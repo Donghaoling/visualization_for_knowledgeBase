@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="height:500px;width:1000px"></div>
+<!-- ECharts单文件引入 -->
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script src="json/relations.json"></script>
+<script type="text/javascript">
+    function getSeries(d) {
+        var ret = []
+		console.log(d);
+		console.log(d.length);
+        for (var i = 0; i < d.length; i++) {
+			console.log(d[i].name);
+			console.log(d[i].value);
+            ret.push({
+                name: d[i].name,				
+                type: 'scatter',
+                symbol: 'circle',
+                symbolSize: function (value) {
+                    var temp = (value[2] / 0.010439848852928599) *2000 ;
+					//var temp = (value[2]) *20;
+                    if (temp < 5 && temp > 0) {
+                        return temp * 2;
+                    }
+                    else {
+                        return temp;
+                    }
+                },
+                data: [d[i].value]
+            })
+        }
+		console.log(ret);
+        return ret;
+    }
+</script>
+<script type="text/javascript">
+    // 路径配置
+    require.config({
+        paths: {
+            echarts: 'http://echarts.baidu.com/build/dist'
+        }
+    });
+
+    // 使用
+    require(
+            [
+                'echarts',
+                'echarts/chart/bar',// 使用柱状图就加载bar模块，按需加载
+                'echarts/chart/line',
+                'echarts/chart/scatter'
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('main'));
+
+                var option = {
+					timeline:{
+						data:[
+							/*'2005-01-01','2007-01-01','2009-01-01','2011-01-01',
+							'2013-01-01'*/
+							'2003-01-01','2004-01-01','2005-01-01','2006-01-01','2007-01-01','2008-01-01','2009-01-01','2010-01-01','2011-01-01'
+							
+							/*'2004-01-01','2006-01-01',
+							'2008-01-01','2010-01-01'*/
+						],
+						label : {
+							formatter : function(s) {
+								return s.slice(0, 4);
+							}
+					
+					},
+						autoPlay : true,
+						playInterval : 1000
+					},
+				options:[
+				{
+					title : {'text':'NSFC data of year 2005'},
+					
+                    tooltip: {
+                        trigger: 'item',
+                        showDelay: 0,
+                        formatter: ' {a}:{c0}'
+                    },
+                    /*legend: {
+                        data:['白血病','干细胞移植','胰腺癌','卵巢癌','食道癌','乙型肝炎']
+                    },*/
+                    toolbox: {
+                        show: true,
+                        feature: {
+                            mark: {show: true},
+                            dataZoom: {show: true},
+                            dataView: {show: true, readOnly: false},
+                            restore: {show: true},
+                            saveAsImage: {show: true}
+                        }
+                    },
+                    xAxis: [
+                        {
+                            /*type: 'category',
+                            boundaryGap: false,
+                            data: function () {
+                                var list = [];
+                                for (var i = 0; i <= 5; i++) {
+                                    list.push(i);
+                                }
+                                return list;
+                            }()*/
+							type: 'value',
+                            splitNumber: 1,
+                            scale: true
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'value',
+                            splitNumber: 1,
+                            scale: true
+                        }
+                    ],
+                    grid: {
+                        x2: 40
+                    },
+
+                    series: getSeries(relations["2003"])
+				},
+				{
+					title : {'text':'NSFC data of year 2004'},
+					series : getSeries(relations["2004"])
+				},
+				{
+					title : {'text':'NSFC data of year 2005'},
+					series : getSeries(relations["2005"])
+				},
+				{
+					title : {'text':'NSFC data of year 2006'},
+					series : getSeries(relations["2006"])
+				},
+				{
+					title : {'text':'NSFC data of year 2007'},
+					series : getSeries(relations["2007"])
+				},
+				{
+					title : {'text':'NSFC data of year 2008'},
+					series : getSeries(relations["2008"])
+				},
+				{
+					title : {'text':'NSFC data of year 2009'},
+					series : getSeries(relations["2009"])
+				},
+				{
+					title : {'text':'NSFC data of year 2010'},
+					series : getSeries(relations["2010"])
+				},
+				{
+					title : {'text':'NSFC data of year 2011'},
+					series : getSeries(relations["2011"])
+				}
+				]
+                };
+
+                // 为echarts对象加载数据 
+                myChart.setOption(option);
+            }
+    );
+</script>
+</body>

@@ -1,0 +1,2012 @@
+relations = {
+    "2005": [
+        {
+            name: "injury+stress+brain", 
+            value: [
+                1.00033178, 
+                0.99952726, 
+                2
+            ]
+        }, 
+        {
+            name: "drug+treatment+substance", 
+            value: [
+                0.988319, 
+                0.9940549, 
+                2
+            ]
+        }, 
+        {
+            name: "cancer+tumor+cells", 
+            value: [
+                1.001897, 
+                0.99922482, 
+                2
+            ]
+        }, 
+        {
+            name: "genetic+disease+genome", 
+            value: [
+                1.000026441, 
+                0.998408, 
+                2
+            ]
+        }, 
+        {
+            name: "hiv+aids+prevention", 
+            value: [
+                0.986932, 
+                0.9979267, 
+                2
+            ]
+        }, 
+        {
+            name: "research+health+clinical", 
+            value: [
+                0.983434, 
+                0.9974008, 
+                2
+            ]
+        }, 
+        {
+            name: "brain+cognitive+disease", 
+            value: [
+                0.9958375, 
+                0.9981168, 
+                2
+            ]
+        }, 
+        {
+            name: "diabetes+type+glucose", 
+            value: [
+                1.00016916, 
+                0.999913531, 
+                2
+            ]
+        }, 
+        {
+            name: "model+aim+dynamics", 
+            value: [
+                0.9987442, 
+                0.99959788, 
+                2
+            ]
+        }, 
+        {
+            name: "proteins+resistance+drug", 
+            value: [
+                0.9986636, 
+                0.9989276, 
+                2
+            ]
+        }, 
+        {
+            name: "risk+factors+health", 
+            value: [
+                0.981509, 
+                0.984704, 
+                2
+            ]
+        }, 
+        {
+            name: "clinical+patients+treatment", 
+            value: [
+                0.977558, 
+                1.0054743, 
+                2
+            ]
+        }, 
+        {
+            name: "community+study+care", 
+            value: [
+                0.970068, 
+                1.0076108, 
+                2
+            ]
+        }, 
+        {
+            name: "role+determine+aim", 
+            value: [
+                1.0041717000000001, 
+                0.989157, 
+                2
+            ]
+        }, 
+        {
+            name: "liver+metabolism+lipid", 
+            value: [
+                1.00051613, 
+                0.99947558, 
+                2
+            ]
+        }, 
+        {
+            name: "health+research+public", 
+            value: [
+                0.78038, 
+                0.88797, 
+                2
+            ]
+        }, 
+        {
+            name: "binding+channel+iron", 
+            value: [
+                0.99933243, 
+                0.9967096, 
+                2
+            ]
+        }, 
+        {
+            name: "neural+cortex+learning", 
+            value: [
+                0.9949064, 
+                0.9967487, 
+                2
+            ]
+        }, 
+        {
+            name: "dna+gene+rna", 
+            value: [
+                0.9967522, 
+                0.9946615, 
+                2
+            ]
+        }, 
+        {
+            name: "imaging+mri+image", 
+            value: [
+                0.9954278, 
+                0.99925133, 
+                2
+            ]
+        }, 
+        {
+            name: "program+training+students", 
+            value: [
+                0.924772, 
+                1.26795, 
+                2
+            ]
+        }, 
+        {
+            name: "women+pregnancy+health", 
+            value: [
+                0.985078, 
+                0.987981, 
+                2
+            ]
+        }, 
+        {
+            name: "proteins+cell+understanding", 
+            value: [
+                0.984685, 
+                0.971395, 
+                2
+            ]
+        }, 
+        {
+            name: "aim+human+model", 
+            value: [
+                0.9983135, 
+                0.9952014, 
+                2
+            ]
+        }, 
+        {
+            name: "metabolic+energy+fat", 
+            value: [
+                0.99928311, 
+                0.9979871, 
+                2
+            ]
+        }, 
+        {
+            name: "lung+fibrosis+disease", 
+            value: [
+                0.99943105, 
+                0.99988355, 
+                2
+            ]
+        }, 
+        {
+            name: "insulin+resistance+aim", 
+            value: [
+                1.00087345, 
+                0.9989049, 
+                2
+            ]
+        }, 
+        {
+            name: "neurons+neuronal+brain", 
+            value: [
+                1.0003254, 
+                0.9977097, 
+                2
+            ]
+        }, 
+        {
+            name: "study+depression+treatment", 
+            value: [
+                0.9985009, 
+                1.0013561, 
+                2
+            ]
+        }, 
+        {
+            name: "pain+chronic+patients", 
+            value: [
+                0.999969586, 
+                0.99989995, 
+                2
+            ]
+        }, 
+        {
+            name: "mutations+disease+defects", 
+            value: [
+                1.00023714, 
+                0.9972515, 
+                2
+            ]
+        }, 
+        {
+            name: "immune+inflammatory+response", 
+            value: [
+                0.9979391, 
+                0.9978537, 
+                2
+            ]
+        }, 
+        {
+            name: "synthesis+products+development", 
+            value: [
+                0.976678, 
+                0.9952481, 
+                2
+            ]
+        }, 
+        {
+            name: "sleep+light+circadian", 
+            value: [
+                0.9967081, 
+                0.9967042, 
+                2
+            ]
+        }, 
+        {
+            name: "virus+vaccine+viral", 
+            value: [
+                0.99960001, 
+                0.99964283, 
+                2
+            ]
+        }, 
+        {
+            name: "delivery+phase+device", 
+            value: [
+                0.9956722, 
+                0.998765, 
+                2
+            ]
+        }, 
+        {
+            name: "center+core+support", 
+            value: [
+                0.971009, 
+                1.012522, 
+                2
+            ]
+        }, 
+        {
+            name: "biomarkers+loss+early", 
+            value: [
+                0.9925362, 
+                1.0043905, 
+                2
+            ]
+        }, 
+        {
+            name: "intervention+health+based", 
+            value: [
+                0.963739, 
+                0.989532, 
+                2
+            ]
+        }, 
+        {
+            name: "cell+cells+gene", 
+            value: [
+                0.99921486, 
+                0.9978369, 
+                2
+            ]
+        }, 
+        {
+            name: "research+year+scientists", 
+            value: [
+                0.87054, 
+                0.987626, 
+                2
+            ]
+        }, 
+        {
+            name: "kidney+disease+muscle", 
+            value: [
+                1.00096596, 
+                0.9985541, 
+                2
+            ]
+        }, 
+        {
+            name: "cells+cell+stem", 
+            value: [
+                1.005815, 
+                0.9941895, 
+                2
+            ]
+        }, 
+        {
+            name: "data+develop+methods", 
+            value: [
+                0.9931542, 
+                0.9997234, 
+                2
+            ]
+        }, 
+        {
+            name: "bone+growth+repair", 
+            value: [
+                0.9979639, 
+                0.9968654, 
+                2
+            ]
+        }, 
+        {
+            name: "research+training+career", 
+            value: [
+                0.73348, 
+                1.028847, 
+                2
+            ]
+        }, 
+        {
+            name: "drug+drugs+efficacy", 
+            value: [
+                0.9986827, 
+                0.99930249, 
+                2
+            ]
+        }, 
+        {
+            name: "alcohol+drinking+integrin", 
+            value: [
+                0.9970976, 
+                0.998626, 
+                2
+            ]
+        }, 
+        {
+            name: "signaling+receptor+mitochondrial", 
+            value: [
+                1.002443, 
+                0.9941486, 
+                2
+            ]
+        }, 
+        {
+            name: "gene+expression+genes", 
+            value: [
+                1.0026626, 
+                0.9949874, 
+                2
+            ]
+        }
+    ], 
+    "2007": [
+        {
+            name: "injury+stress+brain", 
+            value: [
+                1.00046843, 
+                1.00099173, 
+                2
+            ]
+        }, 
+        {
+            name: "drug+treatment+substance", 
+            value: [
+                0.99959835, 
+                1.00014966, 
+                2
+            ]
+        }, 
+        {
+            name: "cancer+tumor+cells", 
+            value: [
+                1.0010629, 
+                1.0052064, 
+                2
+            ]
+        }, 
+        {
+            name: "genetic+disease+genome", 
+            value: [
+                1.0003563, 
+                1.0015108, 
+                2
+            ]
+        }, 
+        {
+            name: "hiv+aids+prevention", 
+            value: [
+                0.997766, 
+                0.9970822, 
+                2
+            ]
+        }, 
+        {
+            name: "research+health+clinical", 
+            value: [
+                0.9980719, 
+                1.0002398, 
+                2
+            ]
+        }, 
+        {
+            name: "brain+cognitive+disease", 
+            value: [
+                0.9987068, 
+                1.001219, 
+                2
+            ]
+        }, 
+        {
+            name: "diabetes+type+glucose", 
+            value: [
+                1.0000072955, 
+                1.0001643, 
+                2
+            ]
+        }, 
+        {
+            name: "model+aim+dynamics", 
+            value: [
+                1.00032273, 
+                1.0045372, 
+                2
+            ]
+        }, 
+        {
+            name: "proteins+resistance+drug", 
+            value: [
+                0.99977638, 
+                1.0005795, 
+                2
+            ]
+        }, 
+        {
+            name: "risk+factors+health", 
+            value: [
+                0.99988808, 
+                1.0013161, 
+                2
+            ]
+        }, 
+        {
+            name: "clinical+patients+treatment", 
+            value: [
+                0.9937437, 
+                0.99907391, 
+                2
+            ]
+        }, 
+        {
+            name: "community+study+care", 
+            value: [
+                0.9962969, 
+                1.00055398, 
+                2
+            ]
+        }, 
+        {
+            name: "role+determine+aim", 
+            value: [
+                1.0034203, 
+                1.032343, 
+                2
+            ]
+        }, 
+        {
+            name: "liver+metabolism+lipid", 
+            value: [
+                1.00023836, 
+                1.00083638, 
+                2
+            ]
+        }, 
+        {
+            name: "health+research+public", 
+            value: [
+                0.985284, 
+                1.0034679, 
+                2
+            ]
+        }, 
+        {
+            name: "binding+channel+iron", 
+            value: [
+                0.99973807, 
+                1.0011064, 
+                2
+            ]
+        }, 
+        {
+            name: "neural+cortex+learning", 
+            value: [
+                0.99962722, 
+                1.0019597, 
+                2
+            ]
+        }, 
+        {
+            name: "dna+gene+rna", 
+            value: [
+                1.00047207, 
+                1.0023592, 
+                2
+            ]
+        }, 
+        {
+            name: "imaging+mri+image", 
+            value: [
+                0.9989605, 
+                1.00017104, 
+                2
+            ]
+        }, 
+        {
+            name: "program+training+students", 
+            value: [
+                0.993346, 
+                0.997241, 
+                2
+            ]
+        }, 
+        {
+            name: "women+pregnancy+health", 
+            value: [
+                0.99932754, 
+                0.99913842, 
+                2
+            ]
+        }, 
+        {
+            name: "proteins+cell+understanding", 
+            value: [
+                1.00081038, 
+                1.010152, 
+                2
+            ]
+        }, 
+        {
+            name: "aim+human+model", 
+            value: [
+                1.00071485, 
+                1.0085654, 
+                2
+            ]
+        }, 
+        {
+            name: "metabolic+energy+fat", 
+            value: [
+                1.000079869, 
+                1.00058819, 
+                2
+            ]
+        }, 
+        {
+            name: "lung+fibrosis+disease", 
+            value: [
+                0.999981684, 
+                1.00041534, 
+                2
+            ]
+        }, 
+        {
+            name: "insulin+resistance+aim", 
+            value: [
+                1.00057794, 
+                1.0039205, 
+                2
+            ]
+        }, 
+        {
+            name: "neurons+neuronal+brain", 
+            value: [
+                1.00031328, 
+                1.0027648, 
+                2
+            ]
+        }, 
+        {
+            name: "study+depression+treatment", 
+            value: [
+                0.999907456, 
+                1.00034466, 
+                2
+            ]
+        }, 
+        {
+            name: "pain+chronic+patients", 
+            value: [
+                1.000040289, 
+                1.00037568, 
+                2
+            ]
+        }, 
+        {
+            name: "mutations+disease+defects", 
+            value: [
+                1.00012405, 
+                1.0035258, 
+                2
+            ]
+        }, 
+        {
+            name: "immune+inflammatory+response", 
+            value: [
+                1.00026666, 
+                1.0014031, 
+                2
+            ]
+        }, 
+        {
+            name: "synthesis+products+development", 
+            value: [
+                0.998345, 
+                1.0012165, 
+                2
+            ]
+        }, 
+        {
+            name: "sleep+light+circadian", 
+            value: [
+                0.9999972455, 
+                1.00097397, 
+                2
+            ]
+        }, 
+        {
+            name: "virus+vaccine+viral", 
+            value: [
+                0.99945665, 
+                1.00025201, 
+                2
+            ]
+        }, 
+        {
+            name: "delivery+phase+device", 
+            value: [
+                0.99977573, 
+                1.00051303, 
+                2
+            ]
+        }, 
+        {
+            name: "center+core+support", 
+            value: [
+                0.9969716, 
+                0.9987852, 
+                2
+            ]
+        }, 
+        {
+            name: "biomarkers+loss+early", 
+            value: [
+                0.99926002, 
+                1.00085053, 
+                2
+            ]
+        }, 
+        {
+            name: "intervention+health+based", 
+            value: [
+                0.9979879, 
+                0.9984519, 
+                2
+            ]
+        }, 
+        {
+            name: "cell+cells+gene", 
+            value: [
+                1.00034374, 
+                1.0036772, 
+                2
+            ]
+        }, 
+        {
+            name: "research+year+scientists", 
+            value: [
+                0.989218, 
+                1.0018712, 
+                2
+            ]
+        }, 
+        {
+            name: "kidney+disease+muscle", 
+            value: [
+                1.00041044, 
+                1.0022214, 
+                2
+            ]
+        }, 
+        {
+            name: "cells+cell+stem", 
+            value: [
+                1.0017814, 
+                1.015934, 
+                2
+            ]
+        }, 
+        {
+            name: "data+develop+methods", 
+            value: [
+                0.99938238, 
+                1.00024594, 
+                2
+            ]
+        }, 
+        {
+            name: "bone+growth+repair", 
+            value: [
+                1.00045995, 
+                1.0030341, 
+                2
+            ]
+        }, 
+        {
+            name: "research+training+career", 
+            value: [
+                0.9456869999999999, 
+                1.0078116, 
+                2
+            ]
+        }, 
+        {
+            name: "drug+drugs+efficacy", 
+            value: [
+                0.9994006, 
+                1.0011252, 
+                2
+            ]
+        }, 
+        {
+            name: "alcohol+drinking+integrin", 
+            value: [
+                0.99950798, 
+                1.00031298, 
+                2
+            ]
+        }, 
+        {
+            name: "signaling+receptor+mitochondrial", 
+            value: [
+                1.00098373, 
+                1.0072332, 
+                2
+            ]
+        }, 
+        {
+            name: "gene+expression+genes", 
+            value: [
+                1.00197, 
+                1.0087248, 
+                2
+            ]
+        }
+    ], 
+    "2009": [
+        {
+            name: "injury+stress+brain", 
+            value: [
+                1.00053579, 
+                0.9984572, 
+                2
+            ]
+        }, 
+        {
+            name: "drug+treatment+substance", 
+            value: [
+                0.9903626, 
+                0.9942396, 
+                2
+            ]
+        }, 
+        {
+            name: "cancer+tumor+cells", 
+            value: [
+                1.0035724, 
+                0.9919608, 
+                2
+            ]
+        }, 
+        {
+            name: "genetic+disease+genome", 
+            value: [
+                0.9993714, 
+                0.9960185, 
+                2
+            ]
+        }, 
+        {
+            name: "hiv+aids+prevention", 
+            value: [
+                0.9984255, 
+                1.002962, 
+                2
+            ]
+        }, 
+        {
+            name: "research+health+clinical", 
+            value: [
+                0.9926488, 
+                1.00085259, 
+                2
+            ]
+        }, 
+        {
+            name: "brain+cognitive+disease", 
+            value: [
+                0.996081, 
+                0.9985289, 
+                2
+            ]
+        }, 
+        {
+            name: "diabetes+type+glucose", 
+            value: [
+                0.99974185, 
+                0.99961531, 
+                2
+            ]
+        }, 
+        {
+            name: "model+aim+dynamics", 
+            value: [
+                0.9981577, 
+                0.9907945, 
+                2
+            ]
+        }, 
+        {
+            name: "proteins+resistance+drug", 
+            value: [
+                0.99903146, 
+                0.9987744, 
+                2
+            ]
+        }, 
+        {
+            name: "risk+factors+health", 
+            value: [
+                0.979901, 
+                0.972545, 
+                2
+            ]
+        }, 
+        {
+            name: "clinical+patients+treatment", 
+            value: [
+                0.982379, 
+                1.026197, 
+                2
+            ]
+        }, 
+        {
+            name: "community+study+care", 
+            value: [
+                0.98788, 
+                1.001834, 
+                2
+            ]
+        }, 
+        {
+            name: "role+determine+aim", 
+            value: [
+                1.0034721, 
+                0.963869, 
+                2
+            ]
+        }, 
+        {
+            name: "liver+metabolism+lipid", 
+            value: [
+                1.000113, 
+                0.9986381, 
+                2
+            ]
+        }, 
+        {
+            name: "health+research+public", 
+            value: [
+                0.85788, 
+                0.917457, 
+                2
+            ]
+        }, 
+        {
+            name: "binding+channel+iron", 
+            value: [
+                0.99918751, 
+                0.9971546, 
+                2
+            ]
+        }, 
+        {
+            name: "neural+cortex+learning", 
+            value: [
+                0.9933806, 
+                0.989995, 
+                2
+            ]
+        }, 
+        {
+            name: "dna+gene+rna", 
+            value: [
+                0.9976787, 
+                0.9969408, 
+                2
+            ]
+        }, 
+        {
+            name: "imaging+mri+image", 
+            value: [
+                0.9944178, 
+                1.0017042, 
+                2
+            ]
+        }, 
+        {
+            name: "program+training+students", 
+            value: [
+                0.987323, 
+                1.017145, 
+                2
+            ]
+        }, 
+        {
+            name: "women+pregnancy+health", 
+            value: [
+                0.9900289, 
+                0.989497, 
+                2
+            ]
+        }, 
+        {
+            name: "proteins+cell+understanding", 
+            value: [
+                0.988352, 
+                0.952874, 
+                2
+            ]
+        }, 
+        {
+            name: "aim+human+model", 
+            value: [
+                0.9974486, 
+                0.986457, 
+                2
+            ]
+        }, 
+        {
+            name: "metabolic+energy+fat", 
+            value: [
+                0.99961981, 
+                0.9983761, 
+                2
+            ]
+        }, 
+        {
+            name: "lung+fibrosis+disease", 
+            value: [
+                0.99926555, 
+                0.9985101, 
+                2
+            ]
+        }, 
+        {
+            name: "insulin+resistance+aim", 
+            value: [
+                1.00011608, 
+                0.9963117, 
+                2
+            ]
+        }, 
+        {
+            name: "neurons+neuronal+brain", 
+            value: [
+                1.00015217, 
+                0.9949111, 
+                2
+            ]
+        }, 
+        {
+            name: "study+depression+treatment", 
+            value: [
+                0.9975812, 
+                0.998733, 
+                2
+            ]
+        }, 
+        {
+            name: "pain+chronic+patients", 
+            value: [
+                0.99943554, 
+                0.9999967598, 
+                2
+            ]
+        }, 
+        {
+            name: "mutations+disease+defects", 
+            value: [
+                0.99987138, 
+                0.9963335, 
+                2
+            ]
+        }, 
+        {
+            name: "immune+inflammatory+response", 
+            value: [
+                0.9977737, 
+                0.9982522, 
+                2
+            ]
+        }, 
+        {
+            name: "synthesis+products+development", 
+            value: [
+                0.9909193, 
+                0.993839, 
+                2
+            ]
+        }, 
+        {
+            name: "sleep+light+circadian", 
+            value: [
+                0.9972233, 
+                0.9955363, 
+                2
+            ]
+        }, 
+        {
+            name: "virus+vaccine+viral", 
+            value: [
+                0.99961345, 
+                1.00052487, 
+                2
+            ]
+        }, 
+        {
+            name: "delivery+phase+device", 
+            value: [
+                0.9956572, 
+                0.9953303, 
+                2
+            ]
+        }, 
+        {
+            name: "center+core+support", 
+            value: [
+                0.9927273, 
+                1.0015312, 
+                2
+            ]
+        }, 
+        {
+            name: "biomarkers+loss+early", 
+            value: [
+                0.9960605, 
+                0.99962215, 
+                2
+            ]
+        }, 
+        {
+            name: "intervention+health+based", 
+            value: [
+                0.970296, 
+                0.971863, 
+                2
+            ]
+        }, 
+        {
+            name: "cell+cells+gene", 
+            value: [
+                1.00036534, 
+                0.9945281, 
+                2
+            ]
+        }, 
+        {
+            name: "research+year+scientists", 
+            value: [
+                0.96167, 
+                1.013216, 
+                2
+            ]
+        }, 
+        {
+            name: "kidney+disease+muscle", 
+            value: [
+                1.00031145, 
+                0.9984783, 
+                2
+            ]
+        }, 
+        {
+            name: "cells+cell+stem", 
+            value: [
+                1.0095098, 
+                0.966132, 
+                2
+            ]
+        }, 
+        {
+            name: "data+develop+methods", 
+            value: [
+                0.9959556, 
+                0.9964147, 
+                2
+            ]
+        }, 
+        {
+            name: "bone+growth+repair", 
+            value: [
+                0.9979823, 
+                0.992404, 
+                2
+            ]
+        }, 
+        {
+            name: "research+training+career", 
+            value: [
+                0.8812, 
+                1.083121, 
+                2
+            ]
+        }, 
+        {
+            name: "drug+drugs+efficacy", 
+            value: [
+                0.9979454, 
+                0.9988793, 
+                2
+            ]
+        }, 
+        {
+            name: "alcohol+drinking+integrin", 
+            value: [
+                0.9960604, 
+                0.9983569, 
+                2
+            ]
+        }, 
+        {
+            name: "signaling+receptor+mitochondrial", 
+            value: [
+                1.0015556, 
+                0.988912, 
+                2
+            ]
+        }, 
+        {
+            name: "gene+expression+genes", 
+            value: [
+                1.0019743, 
+                0.98919, 
+                2
+            ]
+        }
+    ], 
+    "2011": [
+        {
+            name: "injury+stress+brain", 
+            value: [
+                0.99989279, 
+                0.9995239, 
+                2
+            ]
+        }, 
+        {
+            name: "drug+treatment+substance", 
+            value: [
+                0.9967717, 
+                0.99929265, 
+                2
+            ]
+        }, 
+        {
+            name: "cancer+tumor+cells", 
+            value: [
+                1.0016787, 
+                0.9942185, 
+                2
+            ]
+        }, 
+        {
+            name: "genetic+disease+genome", 
+            value: [
+                0.999947034, 
+                0.9982093, 
+                2
+            ]
+        }, 
+        {
+            name: "hiv+aids+prevention", 
+            value: [
+                0.9975151, 
+                1.0030699, 
+                2
+            ]
+        }, 
+        {
+            name: "research+health+clinical", 
+            value: [
+                0.9958101, 
+                1.00093841, 
+                2
+            ]
+        }, 
+        {
+            name: "brain+cognitive+disease", 
+            value: [
+                0.9988441, 
+                0.9991893, 
+                2
+            ]
+        }, 
+        {
+            name: "diabetes+type+glucose", 
+            value: [
+                0.999931711, 
+                0.999928752, 
+                2
+            ]
+        }, 
+        {
+            name: "model+aim+dynamics", 
+            value: [
+                0.99943923, 
+                0.9975517, 
+                2
+            ]
+        }, 
+        {
+            name: "proteins+resistance+drug", 
+            value: [
+                0.99980092, 
+                0.99930478, 
+                2
+            ]
+        }, 
+        {
+            name: "risk+factors+health", 
+            value: [
+                0.98771, 
+                0.9919237, 
+                2
+            ]
+        }, 
+        {
+            name: "clinical+patients+treatment", 
+            value: [
+                0.9954124, 
+                1.013236, 
+                2
+            ]
+        }, 
+        {
+            name: "community+study+care", 
+            value: [
+                0.9965883, 
+                1.001584, 
+                2
+            ]
+        }, 
+        {
+            name: "role+determine+aim", 
+            value: [
+                1.001698, 
+                0.980042, 
+                2
+            ]
+        }, 
+        {
+            name: "liver+metabolism+lipid", 
+            value: [
+                1.00017411, 
+                0.99942404, 
+                2
+            ]
+        }, 
+        {
+            name: "health+research+public", 
+            value: [
+                0.937651, 
+                0.983704, 
+                2
+            ]
+        }, 
+        {
+            name: "binding+channel+iron", 
+            value: [
+                0.99968636, 
+                0.9988457, 
+                2
+            ]
+        }, 
+        {
+            name: "neural+cortex+learning", 
+            value: [
+                0.9979674, 
+                0.9983333, 
+                2
+            ]
+        }, 
+        {
+            name: "dna+gene+rna", 
+            value: [
+                0.997997, 
+                0.9984714, 
+                2
+            ]
+        }, 
+        {
+            name: "imaging+mri+image", 
+            value: [
+                0.9985426, 
+                1.00045388, 
+                2
+            ]
+        }, 
+        {
+            name: "program+training+students", 
+            value: [
+                0.9972288, 
+                1.0041384, 
+                2
+            ]
+        }, 
+        {
+            name: "women+pregnancy+health", 
+            value: [
+                0.9930558, 
+                0.9972448, 
+                2
+            ]
+        }, 
+        {
+            name: "proteins+cell+understanding", 
+            value: [
+                0.9955822, 
+                0.984268, 
+                2
+            ]
+        }, 
+        {
+            name: "aim+human+model", 
+            value: [
+                0.99916779, 
+                0.9944451, 
+                2
+            ]
+        }, 
+        {
+            name: "metabolic+energy+fat", 
+            value: [
+                0.99982437, 
+                0.99960714, 
+                2
+            ]
+        }, 
+        {
+            name: "lung+fibrosis+disease", 
+            value: [
+                0.99959761, 
+                0.99989077, 
+                2
+            ]
+        }, 
+        {
+            name: "insulin+resistance+aim", 
+            value: [
+                1.000092333, 
+                0.9986702, 
+                2
+            ]
+        }, 
+        {
+            name: "neurons+neuronal+brain", 
+            value: [
+                1.00043634, 
+                0.9968446, 
+                2
+            ]
+        }, 
+        {
+            name: "study+depression+treatment", 
+            value: [
+                0.9988786, 
+                1.0022328, 
+                2
+            ]
+        }, 
+        {
+            name: "pain+chronic+patients", 
+            value: [
+                0.999981013, 
+                1.0010295, 
+                2
+            ]
+        }, 
+        {
+            name: "mutations+disease+defects", 
+            value: [
+                1.00011942, 
+                0.9978105, 
+                2
+            ]
+        }, 
+        {
+            name: "immune+inflammatory+response", 
+            value: [
+                0.99965483, 
+                0.99922445, 
+                2
+            ]
+        }, 
+        {
+            name: "synthesis+products+development", 
+            value: [
+                0.9951665, 
+                0.99970124, 
+                2
+            ]
+        }, 
+        {
+            name: "sleep+light+circadian", 
+            value: [
+                0.99908732, 
+                0.99920183, 
+                2
+            ]
+        }, 
+        {
+            name: "virus+vaccine+viral", 
+            value: [
+                0.99988932, 
+                1.000021401, 
+                2
+            ]
+        }, 
+        {
+            name: "delivery+phase+device", 
+            value: [
+                0.998059, 
+                0.999685, 
+                2
+            ]
+        }, 
+        {
+            name: "center+core+support", 
+            value: [
+                0.9977035, 
+                1.0040755, 
+                2
+            ]
+        }, 
+        {
+            name: "biomarkers+loss+early", 
+            value: [
+                0.9994343, 
+                1.026575, 
+                2
+            ]
+        }, 
+        {
+            name: "intervention+health+based", 
+            value: [
+                0.98804, 
+                0.9966331, 
+                2
+            ]
+        }, 
+        {
+            name: "cell+cells+gene", 
+            value: [
+                1.00014782, 
+                0.9965987, 
+                2
+            ]
+        }, 
+        {
+            name: "research+year+scientists", 
+            value: [
+                0.986112, 
+                1.0060277, 
+                2
+            ]
+        }, 
+        {
+            name: "kidney+disease+muscle", 
+            value: [
+                1.00026682, 
+                0.99976534, 
+                2
+            ]
+        }, 
+        {
+            name: "cells+cell+stem", 
+            value: [
+                1.0038686, 
+                0.980838, 
+                2
+            ]
+        }, 
+        {
+            name: "data+develop+methods", 
+            value: [
+                0.9982759, 
+                0.99960454, 
+                2
+            ]
+        }, 
+        {
+            name: "bone+growth+repair", 
+            value: [
+                0.9989334, 
+                0.9979351, 
+                2
+            ]
+        }, 
+        {
+            name: "research+training+career", 
+            value: [
+                0.96749, 
+                1.023673, 
+                2
+            ]
+        }, 
+        {
+            name: "drug+drugs+efficacy", 
+            value: [
+                0.99966071, 
+                0.99963331, 
+                2
+            ]
+        }, 
+        {
+            name: "alcohol+drinking+integrin", 
+            value: [
+                0.9984184, 
+                0.99984869, 
+                2
+            ]
+        }, 
+        {
+            name: "signaling+receptor+mitochondrial", 
+            value: [
+                1.00073769, 
+                0.9958822, 
+                2
+            ]
+        }, 
+        {
+            name: "gene+expression+genes", 
+            value: [
+                1.0011621, 
+                0.9951848, 
+                2
+            ]
+        }
+    ], 
+    "2013": [
+        {
+            name: "injury+stress+brain", 
+            value: [
+                1.0013487, 
+                1.0026891, 
+                2
+            ]
+        }, 
+        {
+            name: "drug+treatment+substance", 
+            value: [
+                1.0044016, 
+                0.9952132, 
+                2
+            ]
+        }, 
+        {
+            name: "cancer+tumor+cells", 
+            value: [
+                1.047181, 
+                1.051802, 
+                2
+            ]
+        }, 
+        {
+            name: "genetic+disease+genome", 
+            value: [
+                1.01994, 
+                1.0016097, 
+                2
+            ]
+        }, 
+        {
+            name: "hiv+aids+prevention", 
+            value: [
+                1.023624, 
+                0.959128, 
+                2
+            ]
+        }, 
+        {
+            name: "research+health+clinical", 
+            value: [
+                1.41642, 
+                0.64854, 
+                2
+            ]
+        }, 
+        {
+            name: "brain+cognitive+disease", 
+            value: [
+                1.013517, 
+                0.9965739, 
+                2
+            ]
+        }, 
+        {
+            name: "diabetes+type+glucose", 
+            value: [
+                0.992439, 
+                0.99937347, 
+                2
+            ]
+        }, 
+        {
+            name: "model+aim+dynamics", 
+            value: [
+                1.0059432, 
+                1.0046124, 
+                2
+            ]
+        }, 
+        {
+            name: "proteins+resistance+drug", 
+            value: [
+                1.13777, 
+                1.029354, 
+                2
+            ]
+        }, 
+        {
+            name: "risk+factors+health", 
+            value: [
+                1.015705, 
+                0.983146, 
+                2
+            ]
+        }, 
+        {
+            name: "clinical+patients+treatment", 
+            value: [
+                1.093034, 
+                0.88298, 
+                2
+            ]
+        }, 
+        {
+            name: "community+study+care", 
+            value: [
+                1.014272, 
+                0.98655, 
+                2
+            ]
+        }, 
+        {
+            name: "role+determine+aim", 
+            value: [
+                1.14351, 
+                1.15685, 
+                2
+            ]
+        }, 
+        {
+            name: "liver+metabolism+lipid", 
+            value: [
+                0.998275, 
+                1.012447, 
+                2
+            ]
+        }, 
+        {
+            name: "health+research+public", 
+            value: [
+                1.038545, 
+                0.959392, 
+                2
+            ]
+        }, 
+        {
+            name: "binding+channel+iron", 
+            value: [
+                1.008606, 
+                1.0079958, 
+                2
+            ]
+        }, 
+        {
+            name: "neural+cortex+learning", 
+            value: [
+                1.0042313, 
+                1.00087696, 
+                2
+            ]
+        }, 
+        {
+            name: "dna+gene+rna", 
+            value: [
+                1.066845, 
+                1.033846, 
+                2
+            ]
+        }, 
+        {
+            name: "imaging+mri+image", 
+            value: [
+                1.021601, 
+                0.981505, 
+                2
+            ]
+        }, 
+        {
+            name: "program+training+students", 
+            value: [
+                1.012755, 
+                0.977154, 
+                2
+            ]
+        }, 
+        {
+            name: "women+pregnancy+health", 
+            value: [
+                1.007862, 
+                0.9930699, 
+                2
+            ]
+        }, 
+        {
+            name: "proteins+cell+understanding", 
+            value: [
+                1.049712, 
+                1.04459, 
+                2
+            ]
+        }, 
+        {
+            name: "aim+human+model", 
+            value: [
+                1.018768, 
+                1.015867, 
+                2
+            ]
+        }, 
+        {
+            name: "metabolic+energy+fat", 
+            value: [
+                1.00071934, 
+                1.0070294, 
+                2
+            ]
+        }, 
+        {
+            name: "lung+fibrosis+disease", 
+            value: [
+                1.0077769, 
+                0.9988155, 
+                2
+            ]
+        }, 
+        {
+            name: "insulin+resistance+aim", 
+            value: [
+                1.00017521, 
+                1.0089793, 
+                2
+            ]
+        }, 
+        {
+            name: "neurons+neuronal+brain", 
+            value: [
+                1.0083183, 
+                1.013255, 
+                2
+            ]
+        }, 
+        {
+            name: "study+depression+treatment", 
+            value: [
+                1.010042, 
+                0.9956792, 
+                2
+            ]
+        }, 
+        {
+            name: "pain+chronic+patients", 
+            value: [
+                1.0033378, 
+                0.9960907, 
+                2
+            ]
+        }, 
+        {
+            name: "mutations+disease+defects", 
+            value: [
+                1.021436, 
+                1.011753, 
+                2
+            ]
+        }, 
+        {
+            name: "immune+inflammatory+response", 
+            value: [
+                1.073299, 
+                0.988152, 
+                2
+            ]
+        }, 
+        {
+            name: "synthesis+products+development", 
+            value: [
+                1.013456, 
+                0.9914508, 
+                2
+            ]
+        }, 
+        {
+            name: "sleep+light+circadian", 
+            value: [
+                1.0020646, 
+                1.0013119, 
+                2
+            ]
+        }, 
+        {
+            name: "virus+vaccine+viral", 
+            value: [
+                1.058165, 
+                0.974856, 
+                2
+            ]
+        }, 
+        {
+            name: "delivery+phase+device", 
+            value: [
+                1.0088713, 
+                0.9944438, 
+                2
+            ]
+        }, 
+        {
+            name: "center+core+support", 
+            value: [
+                1.016919, 
+                0.97845, 
+                2
+            ]
+        }, 
+        {
+            name: "biomarkers+loss+early", 
+            value: [
+                1.011751, 
+                0.986722, 
+                2
+            ]
+        }, 
+        {
+            name: "intervention+health+based", 
+            value: [
+                1.013807, 
+                0.982919, 
+                2
+            ]
+        }, 
+        {
+            name: "cell+cells+gene", 
+            value: [
+                1.4852699999999999, 
+                1.3079100000000001, 
+                2
+            ]
+        }, 
+        {
+            name: "research+year+scientists", 
+            value: [
+                1.055282, 
+                0.940115, 
+                2
+            ]
+        }, 
+        {
+            name: "kidney+disease+muscle", 
+            value: [
+                1.043156, 
+                1.0051113, 
+                2
+            ]
+        }, 
+        {
+            name: "cells+cell+stem", 
+            value: [
+                1.19955, 
+                1.2013099999999999, 
+                2
+            ]
+        }, 
+        {
+            name: "data+develop+methods", 
+            value: [
+                1.019249, 
+                0.986084, 
+                2
+            ]
+        }, 
+        {
+            name: "bone+growth+repair", 
+            value: [
+                1.013193, 
+                1.013422, 
+                2
+            ]
+        }, 
+        {
+            name: "research+training+career", 
+            value: [
+                1.22454, 
+                0.70763, 
+                2
+            ]
+        }, 
+        {
+            name: "drug+drugs+efficacy", 
+            value: [
+                1.020393, 
+                0.9935331, 
+                2
+            ]
+        }, 
+        {
+            name: "alcohol+drinking+integrin", 
+            value: [
+                1.022257, 
+                0.98754, 
+                2
+            ]
+        }, 
+        {
+            name: "signaling+receptor+mitochondrial", 
+            value: [
+                1.030345, 
+                1.040885, 
+                2
+            ]
+        }, 
+        {
+            name: "gene+expression+genes", 
+            value: [
+                1.055524, 
+                1.047532, 
+                2
+            ]
+        }
+    ]
+}

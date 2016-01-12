@@ -1,0 +1,41 @@
+
+
+#cloud1{
+	top:500px;
+	left:0px;
+	height:400px;
+	width:300px;
+	position:absolute;
+
+}
+
+#cloud2{
+	top:500px;
+	left:250px;	
+	height:400px;
+	width:300px;
+	position:absolute;
+}
+
+#cloud3{
+	top:500px;
+	left:500px;	
+	height:400px;
+	width:300px;
+	position:absolute;
+}
+
+#cloud4{
+	top:500px;
+	left:750px;
+	height:400px;
+	width:300px;
+	position:absolute;
+}
+
+
+#timeline{
+	height:400px;
+	width:300px;
+	top:500px;
+}
